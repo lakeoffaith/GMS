@@ -1,0 +1,5 @@
+F:\c\GMS\GMS\bin\GMS.Core.Upload.dll
+F:\c\GMS\GMS\bin\GMS.Core.Upload.pdb
+F:\c\GMS\GMS\Src\GMS.Core.Upload\obj\Debug\GMS.Core.Upload.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Core.Upload\obj\Debug\GMS.Core.Upload.dll
+F:\c\GMS\GMS\Src\GMS.Core.Upload\obj\Debug\GMS.Core.Upload.pdb

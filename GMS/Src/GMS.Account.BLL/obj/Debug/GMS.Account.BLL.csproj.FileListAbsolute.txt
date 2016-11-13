@@ -1,0 +1,5 @@
+F:\c\GMS\GMS\bin\GMS.Account.BLL.dll
+F:\c\GMS\GMS\bin\GMS.Account.BLL.pdb
+F:\c\GMS\GMS\Src\GMS.Account.BLL\obj\Debug\GMS.Account.BLL.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Account.BLL\obj\Debug\GMS.Account.BLL.dll
+F:\c\GMS\GMS\Src\GMS.Account.BLL\obj\Debug\GMS.Account.BLL.pdb

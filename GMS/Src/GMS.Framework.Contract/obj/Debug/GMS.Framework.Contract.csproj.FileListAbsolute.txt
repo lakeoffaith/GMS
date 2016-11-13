@@ -1,0 +1,6 @@
+F:\c\GMS\GMS\bin\GMS.Framework.Contract.XML
+F:\c\GMS\GMS\bin\GMS.Framework.Contract.dll
+F:\c\GMS\GMS\bin\GMS.Framework.Contract.pdb
+F:\c\GMS\GMS\Src\GMS.Framework.Contract\obj\Debug\GMS.Framework.Contract.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Framework.Contract\obj\Debug\GMS.Framework.Contract.dll
+F:\c\GMS\GMS\Src\GMS.Framework.Contract\obj\Debug\GMS.Framework.Contract.pdb

@@ -1,0 +1,5 @@
+F:\c\GMS\GMS\bin\GMS.Account.DAL.dll
+F:\c\GMS\GMS\bin\GMS.Account.DAL.pdb
+F:\c\GMS\GMS\Src\GMS.Account.DAL\obj\Debug\GMS.Account.DAL.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Account.DAL\obj\Debug\GMS.Account.DAL.dll
+F:\c\GMS\GMS\Src\GMS.Account.DAL\obj\Debug\GMS.Account.DAL.pdb

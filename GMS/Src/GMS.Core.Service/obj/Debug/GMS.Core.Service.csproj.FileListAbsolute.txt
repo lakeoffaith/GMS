@@ -1,0 +1,5 @@
+F:\c\GMS\GMS\bin\GMS.Core.Service.dll
+F:\c\GMS\GMS\bin\GMS.Core.Service.pdb
+F:\c\GMS\GMS\Src\GMS.Core.Service\obj\Debug\GMS.Core.Service.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Core.Service\obj\Debug\GMS.Core.Service.dll
+F:\c\GMS\GMS\Src\GMS.Core.Service\obj\Debug\GMS.Core.Service.pdb
