@@ -1,21 +1,26 @@
 ﻿using System;
-using System.Linq;
-using GMS.Framework.Contract;
 using System.Collections.Generic;
-using GMS.Framework.Utility;
+using System.Linq;
+using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace GMS.Account.Contract
 {
     [Serializable]
     [Table("VerifyCode")]
-    public class VerifyCode : ModelBase
+    public  class VerifyCode
     {
-        public Guid Guid { get; set; }
+        public VerifyCode()
+        {
+            CreateTime = DateTime.Now;
+        }
+        public int ID { set; get; }
+
+        public Guid Guid { set; get; }
+
         public string VerifyText { get; set; }
+
+        public DateTime CreateTime { get; set; }
     }
-
 }
-
-
-

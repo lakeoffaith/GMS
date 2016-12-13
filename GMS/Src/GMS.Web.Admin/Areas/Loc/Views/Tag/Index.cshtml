@@ -1,0 +1,198 @@
+﻿
+@using GMS.Framework.Contract
+@using GMS.Framework.Utility
+@using GMS.Framework.Web.Controls
+@using GMS.Loc.Contract
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- 
+   插件：
+    datatable 
+    -->
+
+@section PageSpecificStyleSheetIncludes{
+    <!-- BEGIN PAGE LEVEL STYLES -->
+
+<link rel="stylesheet" type="text/css" href="~/metronicassets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN THEME STYLES -->
+
+    <style type="text/css"> 
+        
+    </style>
+}
+@section PageSpecificJavascriptIncludes{
+    <!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="~/metronicassets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="~/metronicassets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="~/metronicassets/ijoy/datatables/dataTables.ijoy.js"></script>
+<script>
+    $(function () {
+        
+        /* 
+         * 初始化表格参数 
+         */
+       
+       
+
+        
+    })
+    var oTable = customerDataTables("sample_1", {
+        "sAjaxSource": "/Loc/Tag/JsonForDT",
+        "aoColumns": [{
+            "mData": "Id",
+            "bVisible": false
+        }, {
+            "mData": "",
+            "sTitle": "<input type='checkbox' class='group-checkable' data-set='#sample_1 .checkboxes'>",
+            "mRender": function (data, type, full) {
+                return "<div class='checker'><span><input type='checkbox' class='checkboxes' value='1'></span></div>";
+            },
+            "sClass": "table-checkbox"
+        }, {
+            "mData": "TagMac", //列标识，和服务器返回数据中的属性名称对应  
+            "sTitle": "标签路由",//列标题  
+            "sDefaultContent": "", //此列默认值为""，以防数据中没有此值，DataTables加载数据的时候报错  
+            //"bVisible": false //此列不显示  
+            //"sClass" : "hidden"//定义列的class参数，隐藏列也可以通过这种方式设置
+
+        }, {
+            "mData": "TagName",
+            "sTitle": "发送人",
+            "sWidth": "10%",//定义列宽度，以百分比表示  
+            "sDefaultContent": "",
+        }, {
+            "mData": "SerialNo",
+            "sTitle": "接收人",
+            "sDefaultContent": "",
+        }, {
+            "mData": "WriteTime",
+            "sTitle": "消息内容",
+            "sDefaultContent": "",
+            "bSortable": false   //此列不需要排序  
+        }]
+    });// $('#sample_1').dataTable();
+    $("#searchBtn").on("click", function () {
+        oTable.fnFilter();
+    });
+</script>
+}
+<div class="page-bar">
+   
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">首页</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">人员管理</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">所有人员</a>
+					</li>
+				</ul>
+			</div>
+						<div class="row">
+                               
+                                   <div class="col-md-12">
+								<!-- BEGIN SAMPLE TABLE PORTLET-->
+								<div class="portlet box green">
+									<div class="portlet-title">
+										<div class="caption">
+											<i class="fa fa-filter"></i>查询内容
+										</div>
+										<div class="tools">
+											<button class="btn btn-primary btn-sm btn-oval active" id="searchBtn">
+												<i class="fa fa-search"></i>
+											查询</button>
+											<a href="javascript:;" class="collapse">
+											</a>
+										</div>
+									</div>
+									<div class="portlet-body">
+										<form action="" class="form-horizontal" role="form">
+											<div class="row">
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="inputName" class="col-md-4 control-label">
+															名称：
+														</label>
+														<div class="col-md-8">
+                                                            <input  type="text" id="HostName"/>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="inputName" class="col-md-4 control-label">
+															编号：
+														</label>
+														<div class="col-md-8">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="col-md-2 control-label">标签：</label>		
+														<div class="radio-list col-md-9">
+															<label class="radio-inline">
+															<input type="radio" name="tagBindingSelectedValue"  value="2" >不限 </label>
+															<label class="radio-inline">
+															<input type="radio" name="tagBindingSelectedValue" value="1" checked> 已领用 </label>
+															<label class="radio-inline">
+															<input type="radio" name="tagBindingSelectedValue"  value="0"> 未领用 </label>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="col-md-2 control-label">在线</label>		
+														<div class="radio-list col-md-9">
+															<label class="radio-inline">
+															<input type="radio" name="tagOnlineSelectedValue"  value="2" > 不限</label>
+															<label class="radio-inline">
+															<input type="radio" name="tagOnlineSelectedValue"  value="1" checked> 在线 </label>
+															<label class="radio-inline">
+															<input type="radio" name="tagOnlineSelectedValue"  value="0"> 不在线 </label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<!-- END SAMPLE TABLE PORTLET-->
+							</div>
+			            </div>
+			            <div class="row">
+							<div class="col-md-12">
+								<!-- BEGIN SAMPLE TABLE PORTLET-->
+								<div class="portlet box green">
+									<div class="portlet-title">
+										<div class="caption">
+											<i class="fa fa-cogs"></i>数据列表
+										</div>
+										<div class="actions">
+										<a href=@Url.Action("Add","HostTag")  class="btn btn-default btn-sm">
+										<i class="fa fa-plus"></i> Add </a>
+										</div>
+									</div>
+									<div class="portlet-body">
+
+										<table class="table table-striped table-bordered table-hover" id="sample_1">
+                                           
+										</table>
+                                    </div>
+								</div>
+								<!-- END SAMPLE TABLE PORTLET-->
+							</div>
+			            </div>

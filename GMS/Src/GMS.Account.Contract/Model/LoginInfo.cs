@@ -1,35 +1,40 @@
 ﻿using System;
-using System.Linq;
-using GMS.Framework.Contract;
 using System.Collections.Generic;
-using GMS.Framework.Utility;
+using System.Linq;
+using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
+using GMS.Framework.Utility;
 
 namespace GMS.Account.Contract
 {
     [Serializable]
     [Table("LoginInfo")]
-    public class LoginInfo : ModelBase
+    public class LoginInfo
     {
+
         public LoginInfo()
         {
-            LastAccessTime = DateTime.Now;
-            LoginToken = Guid.NewGuid();
+            CreateTime = DateTime.Now;
         }
 
-        public LoginInfo(int userID, string loginName)
+        public LoginInfo(int UserID, string ClientIP)
         {
-            LastAccessTime = DateTime.Now;
-            LoginToken = Guid.NewGuid();
-
-            UserID = userID;
-            LoginName = loginName;
+            // TODO: Complete member initialization
+            this.UserID = UserID;
+            this.ClientIP = ClientIP;
         }
+
+        public virtual int ID { set; get; }
+        public virtual DateTime CreateTime { set; get; }
 
         public Guid LoginToken { get; set; }
+
         public DateTime LastAccessTime { get; set; }
-        public int UserID { get; set; }
+
+        public int UserID { set; get; }
+
         public string LoginName { get; set; }
+
         public string ClientIP { get; set; }
 
         public EnumLoginAccountType EnumLoginAccountType { get; set; }
@@ -53,20 +58,13 @@ namespace GMS.Account.Contract
         }
     }
 
+
     [Flags]
     public enum EnumLoginAccountType
     {
-        [EnumTitle("[无]", IsDisplay = false)]
-        Guest = 0,
-        /// <summary>
-        /// 管理员
-        /// </summary>
+        [EnumTitle("[客人]",IsDisplay=false)]
+        Guest=0,
         [EnumTitle("管理员")]
-        Administrator = 1,
+        Administrator=1
     }
-
-
 }
-
-
-

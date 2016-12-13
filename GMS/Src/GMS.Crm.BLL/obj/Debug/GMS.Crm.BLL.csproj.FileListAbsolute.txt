@@ -1,5 +1,0 @@
-F:\c\GMS\GMS\bin\GMS.Crm.BLL.dll
-F:\c\GMS\GMS\bin\GMS.Crm.BLL.pdb
-F:\c\GMS\GMS\Src\GMS.Crm.BLL\obj\Debug\GMS.Crm.BLL.csprojResolveAssemblyReference.cache
-F:\c\GMS\GMS\Src\GMS.Crm.BLL\obj\Debug\GMS.Crm.BLL.dll
-F:\c\GMS\GMS\Src\GMS.Crm.BLL\obj\Debug\GMS.Crm.BLL.pdb

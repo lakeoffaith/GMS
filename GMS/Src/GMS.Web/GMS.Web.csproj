@@ -43,21 +43,19 @@
     <Compile Include="ControllerBase.cs" />
     <Compile Include="CookieContext.cs" />
     <Compile Include="IAuthCookie.cs" />
-    <Compile Include="PermissionAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceContext.cs" />
     <Compile Include="StaticFileHelper.cs" />
     <Compile Include="UserContext.cs" />
     <Compile Include="VerifyCodeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GMS.Account.BLL\GMS.Account.BLL.csproj">
+      <Project>{70a7663c-09ab-4bab-9bfc-f0649fe6c8f4}</Project>
+      <Name>GMS.Account.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GMS.Account.Contract\GMS.Account.Contract.csproj">
       <Project>{08CFB8BA-AA0E-42F5-B6BF-140C64E34377}</Project>
       <Name>GMS.Account.Contract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GMS.Cms.Contract\GMS.Cms.Contract.csproj">
-      <Project>{B5C93A51-4CBF-419C-A8B1-290B3F163B5E}</Project>
-      <Name>GMS.Cms.Contract</Name>
     </ProjectReference>
     <ProjectReference Include="..\GMS.Core.Cache\GMS.Core.Cache.csproj">
       <Project>{A155C5D8-FEE0-415C-940A-26C94D61BE9B}</Project>
@@ -75,9 +73,9 @@
       <Project>{99D0022F-17D5-4DD5-B4D3-BA8FDC81F7AF}</Project>
       <Name>GMS.Core.Upload</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GMS.Crm.Contract\GMS.Crm.Contract.csproj">
-      <Project>{0DB50285-89DE-42C7-9274-8D1633AAF01C}</Project>
-      <Name>GMS.Crm.Contract</Name>
+    <ProjectReference Include="..\GMS.Framework.BLL\GMS.Framework.BLL.csproj">
+      <Project>{290b5d69-973b-444e-a956-555534090cd7}</Project>
+      <Name>GMS.Framework.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\GMS.Framework.Contract\GMS.Framework.Contract.csproj">
       <Project>{11214D97-F23C-4E16-AA12-ECD824454744}</Project>
@@ -91,9 +89,9 @@
       <Project>{AA76F90E-2594-44C8-89D6-302A0C8757AD}</Project>
       <Name>GMS.Framework.Web</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GMS.OA.Contract\GMS.OA.Contract.csproj">
-      <Project>{F6F83E95-5F65-410C-B49F-7763E2184251}</Project>
-      <Name>GMS.OA.Contract</Name>
+    <ProjectReference Include="..\GMS.Loc.Contract\GMS.Loc.Contract.csproj">
+      <Project>{450d740a-b1b1-4d4d-b48f-5a38b4e2c35f}</Project>
+      <Name>GMS.Loc.Contract</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

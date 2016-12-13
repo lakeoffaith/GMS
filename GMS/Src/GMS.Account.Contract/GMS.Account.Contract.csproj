@@ -40,10 +40,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAccountService.cs" />
     <Compile Include="Model\EnumBusinessPermission.cs" />
     <Compile Include="Model\LoginInfo.cs" />
-    <Compile Include="Model\Requests.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\VerifyCode.cs" />

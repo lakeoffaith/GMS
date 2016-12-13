@@ -1,0 +1,16 @@
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Loc.Contract.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Loc.Contract.pdb
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\EntityFramework.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\EntityFramework.Extended.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Contract.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Utility.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\Newtonsoft.Json.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Contract.pdb
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Contract.xml
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Utility.pdb
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\GMS.Framework.Utility.xml
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\EntityFramework.xml
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\bin\Debug\EntityFramework.Extended.xml
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\obj\Debug\GMS.Loc.Contract.csprojResolveAssemblyReference.cache
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\obj\Debug\GMS.Loc.Contract.dll
+F:\c\GMS\GMS\Src\GMS.Loc.Contract\obj\Debug\GMS.Loc.Contract.pdb

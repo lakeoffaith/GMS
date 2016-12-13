@@ -4,10 +4,11 @@
         <name>GMS.Framework.DAL</name>
     </assembly>
     <members>
-        <member name="T:GMS.Framework.DAL.DbContextBase">
+        <member name="T:GMS.Framework.DAL.Impl.BaseRepositoryImpl">
             <summary>
-            DAL基类，实现Repository通用泛型数据访问模式
+            实现对数据库的操作(增删改查)的基类
             </summary>
+            <typeparam name="T">定义泛型,约束其是一个类</typeparam>
         </member>
     </members>
 </doc>

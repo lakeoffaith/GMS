@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GMSLocModelStoreContainer" CdmEntityContainer="GMSLocEntities1">
+    <EntitySetMapping Name="config_SurveyGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.config_SurveyGroup">
+        <MappingFragment StoreEntitySet="config_SurveyGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SurveyGroupName" ColumnName="SurveyGroupName" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="config_TagGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.config_TagGroup">
+        <MappingFragment StoreEntitySet="config_TagGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupIcon" ColumnName="GroupIcon" />
+          <ScalarProperty Name="GroupDescription" ColumnName="GroupDescription" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="config_TagGroupCoverage">
+      <EntityTypeMapping TypeName="GMSLocModel.config_TagGroupCoverage">
+        <MappingFragment StoreEntitySet="config_TagGroupCoverage">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="TagGroupId" ColumnName="TagGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="config_TagLocateSetting">
+      <EntityTypeMapping TypeName="GMSLocModel.config_TagLocateSetting">
+        <MappingFragment StoreEntitySet="config_TagLocateSetting">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="LocatingMode" ColumnName="LocatingMode" />
+          <ScalarProperty Name="ScanMode" ColumnName="ScanMode" />
+          <ScalarProperty Name="ScanTarget" ColumnName="ScanTarget" />
+          <ScalarProperty Name="ScanSsid" ColumnName="ScanSsid" />
+          <ScalarProperty Name="ScanChannels" ColumnName="ScanChannels" />
+          <ScalarProperty Name="ScanInterval" ColumnName="ScanInterval" />
+          <ScalarProperty Name="SurveyGroupId" ColumnName="SurveyGroupId" />
+          <ScalarProperty Name="RssiBackCount" ColumnName="RssiBackCount" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="CommandState" ColumnName="CommandState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_AP">
+      <EntityTypeMapping TypeName="GMSLocModel.device_AP">
+        <MappingFragment StoreEntitySet="device_AP">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="APMac" ColumnName="APMac" />
+          <ScalarProperty Name="APName" ColumnName="APName" />
+          <ScalarProperty Name="SelfIP" ColumnName="SelfIP" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="LoginPassword" ColumnName="LoginPassword" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="APModel" ColumnName="APModel" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="Desciption" ColumnName="Desciption" />
+          <ScalarProperty Name="MaxRssiValueByAP" ColumnName="MaxRssiValueByAP" />
+          <ScalarProperty Name="MaxRssivalueByTag" ColumnName="MaxRssivalueByTag" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_APSetting">
+      <EntityTypeMapping TypeName="GMSLocModel.device_APSetting">
+        <MappingFragment StoreEntitySet="device_APSetting">
+          <ScalarProperty Name="APId" ColumnName="APId" />
+          <ScalarProperty Name="APMode" ColumnName="APMode" />
+          <ScalarProperty Name="Ssid" ColumnName="Ssid" />
+          <ScalarProperty Name="Channel" ColumnName="Channel" />
+          <ScalarProperty Name="Security" ColumnName="Security" />
+          <ScalarProperty Name="Encrypt" ColumnName="Encrypt" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LocatingEnabled" ColumnName="LocatingEnabled" />
+          <ScalarProperty Name="LocatingScanDuration" ColumnName="LocatingScanDuration" />
+          <ScalarProperty Name="LocatingScanType" ColumnName="LocatingScanType" />
+          <ScalarProperty Name="LocatingMacFilterEnabled" ColumnName="LocatingMacFilterEnabled" />
+          <ScalarProperty Name="LocatingMacFilter" ColumnName="LocatingMacFilter" />
+          <ScalarProperty Name="TempFileSize" ColumnName="TempFileSize" />
+          <ScalarProperty Name="ServerIP" ColumnName="ServerIP" />
+          <ScalarProperty Name="ServerPort" ColumnName="ServerPort" />
+          <ScalarProperty Name="NtpEnabled" ColumnName="NtpEnabled" />
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="SummerTime" ColumnName="SummerTime" />
+          <ScalarProperty Name="NtpServer" ColumnName="NtpServer" />
+          <ScalarProperty Name="WebRemoteEnabled" ColumnName="WebRemoteEnabled" />
+          <ScalarProperty Name="WebRemotePort" ColumnName="WebRemotePort" />
+          <ScalarProperty Name="WanMode" ColumnName="WanMode" />
+          <ScalarProperty Name="WanStaticIp" ColumnName="WanStaticIp" />
+          <ScalarProperty Name="WanNetMask" ColumnName="WanNetMask" />
+          <ScalarProperty Name="WanGateWay" ColumnName="WanGateWay" />
+          <ScalarProperty Name="WanDns" ColumnName="WanDns" />
+          <ScalarProperty Name="LanStaticIp" ColumnName="LanStaticIp" />
+          <ScalarProperty Name="LanNetMask" ColumnName="LanNetMask" />
+          <ScalarProperty Name="LanGateWay" ColumnName="LanGateWay" />
+          <ScalarProperty Name="LanDns" ColumnName="LanDns" />
+          <ScalarProperty Name="APMacFilterStatus" ColumnName="APMacFilterStatus" />
+          <ScalarProperty Name="APMacFilter" ColumnName="APMacFilter" />
+          <ScalarProperty Name="WirelessNetworkMode" ColumnName="WirelessNetworkMode" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="WizardEnabled" ColumnName="WizardEnabled" />
+          <ScalarProperty Name="WizardPort" ColumnName="WizardPort" />
+          <ScalarProperty Name="CacheFileEnabled" ColumnName="CacheFileEnabled" />
+          <ScalarProperty Name="CacheFileSize" ColumnName="CacheFileSize" />
+          <ScalarProperty Name="MisCodeEnabled" ColumnName="MisCodeEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_Tag">
+      <EntityTypeMapping TypeName="GMSLocModel.device_Tag">
+        <MappingFragment StoreEntitySet="device_Tag">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TagMac" ColumnName="TagMac" />
+          <ScalarProperty Name="TagName" ColumnName="TagName" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_TagHost">
+      <EntityTypeMapping TypeName="GMSLocModel.device_TagHost">
+        <MappingFragment StoreEntitySet="device_TagHost">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="HostType" ColumnName="HostType" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_TagSetting">
+      <EntityTypeMapping TypeName="GMSLocModel.device_TagSetting">
+        <MappingFragment StoreEntitySet="device_TagSetting">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="FirmwareVersion" ColumnName="FirmwareVersion" />
+          <ScalarProperty Name="WorkingStatus" ColumnName="WorkingStatus" />
+          <ScalarProperty Name="CurrentIP" ColumnName="CurrentIP" />
+          <ScalarProperty Name="HelloInterval" ColumnName="HelloInterval" />
+          <ScalarProperty Name="ServerIP" ColumnName="ServerIP" />
+          <ScalarProperty Name="ServerPort" ColumnName="ServerPort" />
+          <ScalarProperty Name="IsAutoConnectToAP" ColumnName="IsAutoConnectToAP" />
+          <ScalarProperty Name="APSsid" ColumnName="APSsid" />
+          <ScalarProperty Name="APChannel" ColumnName="APChannel" />
+          <ScalarProperty Name="APSecurity" ColumnName="APSecurity" />
+          <ScalarProperty Name="APEncryption" ColumnName="APEncryption" />
+          <ScalarProperty Name="APPassword" ColumnName="APPassword" />
+          <ScalarProperty Name="APMaxConnection" ColumnName="APMaxConnection" />
+          <ScalarProperty Name="APChangeMinRssi" ColumnName="APChangeMinRssi" />
+          <ScalarProperty Name="DhcpEnabled" ColumnName="DhcpEnabled" />
+          <ScalarProperty Name="DhcpStaticIP" ColumnName="DhcpStaticIP" />
+          <ScalarProperty Name="DhcpGateWay" ColumnName="DhcpGateWay" />
+          <ScalarProperty Name="DhcpMask" ColumnName="DhcpMask" />
+          <ScalarProperty Name="ButtonMessageEnabled" ColumnName="ButtonMessageEnabled" />
+          <ScalarProperty Name="ButtonMessageBody" ColumnName="ButtonMessageBody" />
+          <ScalarProperty Name="MotionMessageEnabled" ColumnName="MotionMessageEnabled" />
+          <ScalarProperty Name="MotionMessageInterval" ColumnName="MotionMessageInterval" />
+          <ScalarProperty Name="TemperatureEnabled" ColumnName="TemperatureEnabled" />
+          <ScalarProperty Name="TemperatureMinValue" ColumnName="TemperatureMinValue" />
+          <ScalarProperty Name="TemperatureMaxValue" ColumnName="TemperatureMaxValue" />
+          <ScalarProperty Name="TemperatureMessageInterval" ColumnName="TemperatureMessageInterval" />
+          <ScalarProperty Name="ScanEnabled" ColumnName="ScanEnabled" />
+          <ScalarProperty Name="ScanType" ColumnName="ScanType" />
+          <ScalarProperty Name="ScanSsid" ColumnName="ScanSsid" />
+          <ScalarProperty Name="ScanInterval" ColumnName="ScanInterval" />
+          <ScalarProperty Name="ScanChannel" ColumnName="ScanChannel" />
+          <ScalarProperty Name="ScanBackCount" ColumnName="ScanBackCount" />
+          <ScalarProperty Name="RssiCalculateMethod" ColumnName="RssiCalculateMethod" />
+          <ScalarProperty Name="ScanMinTime" ColumnName="ScanMinTime" />
+          <ScalarProperty Name="ScanMaxTime" ColumnName="ScanMaxTime" />
+          <ScalarProperty Name="LowBatteryValue" ColumnName="LowBatteryValue" />
+          <ScalarProperty Name="CurrentBatteryValue" ColumnName="CurrentBatteryValue" />
+          <ScalarProperty Name="PowerSaverModeEnabled" ColumnName="PowerSaverModeEnabled" />
+          <ScalarProperty Name="PowerSaverModeTimer" ColumnName="PowerSaverModeTimer" />
+          <ScalarProperty Name="BeepEnabled" ColumnName="BeepEnabled" />
+          <ScalarProperty Name="BeeperInterval" ColumnName="BeeperInterval" />
+          <ScalarProperty Name="BeeperHoldTime" ColumnName="BeeperHoldTime" />
+          <ScalarProperty Name="BeeperCount" ColumnName="BeeperCount" />
+          <ScalarProperty Name="LedColor" ColumnName="LedColor" />
+          <ScalarProperty Name="LedCount" ColumnName="LedCount" />
+          <ScalarProperty Name="LedHoldTime" ColumnName="LedHoldTime" />
+          <ScalarProperty Name="LedInterval" ColumnName="LedInterval" />
+          <ScalarProperty Name="LedEnabled" ColumnName="LedEnabled" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="ScanMarkEnable" ColumnName="ScanMarkEnable" />
+          <ScalarProperty Name="ScanMarkDetectInterval" ColumnName="ScanMarkDetectInterval" />
+          <ScalarProperty Name="ScanMarkScanTime" ColumnName="ScanMarkScanTime" />
+          <ScalarProperty Name="ScanMarkScanInterval" ColumnName="ScanMarkScanInterval" />
+          <ScalarProperty Name="ScanMarkScanCount" ColumnName="ScanMarkScanCount" />
+          <ScalarProperty Name="ScanMarkGoodSignal" ColumnName="ScanMarkGoodSignal" />
+          <ScalarProperty Name="ScanMarkLocatingInterval" ColumnName="ScanMarkLocatingInterval" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="History_Activity">
+      <EntityTypeMapping TypeName="GMSLocModel.History_Activity">
+        <MappingFragment StoreEntitySet="History_Activity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ArraginID" ColumnName="ArraginID" />
+          <ScalarProperty Name="PrisonerID" ColumnName="PrisonerID" />
+          <ScalarProperty Name="RouteId" ColumnName="RouteId" />
+          <ScalarProperty Name="SetTime" ColumnName="SetTime" />
+          <ScalarProperty Name="RemoveTime" ColumnName="RemoveTime" />
+          <ScalarProperty Name="ActivityInfo" ColumnName="ActivityInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_AlertProcessLog">
+      <EntityTypeMapping TypeName="GMSLocModel.history_AlertProcessLog">
+        <MappingFragment StoreEntitySet="history_AlertProcessLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="ChangeReason" ColumnName="ChangeReason" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_APLocatorLog">
+      <EntityTypeMapping TypeName="GMSLocModel.history_APLocatorLog">
+        <MappingFragment StoreEntitySet="history_APLocatorLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="APLocatorId" ColumnName="APLocatorId" />
+          <ScalarProperty Name="APLocatorStatus" ColumnName="APLocatorStatus" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_AreaEventLog">
+      <EntityTypeMapping TypeName="GMSLocModel.history_AreaEventLog">
+        <MappingFragment StoreEntitySet="history_AreaEventLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="AreaEventType" ColumnName="AreaEventType" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_GenericEventLog">
+      <EntityTypeMapping TypeName="GMSLocModel.history_GenericEventLog">
+        <MappingFragment StoreEntitySet="history_GenericEventLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="GenericEventType" ColumnName="GenericEventType" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_GetAllRecords">
+      <EntityTypeMapping TypeName="GMSLocModel.history_GetAllRecords">
+        <MappingFragment StoreEntitySet="history_GetAllRecords">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="Records" ColumnName="Records" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="history_TagPositionLog">
+      <EntityTypeMapping TypeName="GMSLocModel.history_TagPositionLog">
+        <MappingFragment StoreEntitySet="history_TagPositionLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="Z" ColumnName="Z" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_APCoverage">
+      <EntityTypeMapping TypeName="GMSLocModel.map_APCoverage">
+        <MappingFragment StoreEntitySet="map_APCoverage">
+          <ScalarProperty Name="APId" ColumnName="APId" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_APNearArea">
+      <EntityTypeMapping TypeName="GMSLocModel.map_APNearArea">
+        <MappingFragment StoreEntitySet="map_APNearArea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="LeftId" ColumnName="LeftId" />
+          <ScalarProperty Name="RightId" ColumnName="RightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_Coordinates">
+      <EntityTypeMapping TypeName="GMSLocModel.map_Coordinates">
+        <MappingFragment StoreEntitySet="map_Coordinates">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="CoordinatesName" ColumnName="CoordinatesName" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="Z" ColumnName="Z" />
+          <ScalarProperty Name="CoordinatesUsage" ColumnName="CoordinatesUsage" />
+          <ScalarProperty Name="FixedTagID" ColumnName="FixedTagID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_CoordinatesWithAPRssi">
+      <EntityTypeMapping TypeName="GMSLocModel.map_CoordinatesWithAPRssi">
+        <MappingFragment StoreEntitySet="map_CoordinatesWithAPRssi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="StrongestAPId" ColumnName="StrongestAPId" />
+          <ScalarProperty Name="SecondStrongestAPId" ColumnName="SecondStrongestAPId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_Facility">
+      <EntityTypeMapping TypeName="GMSLocModel.map_Facility">
+        <MappingFragment StoreEntitySet="map_Facility">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ParentFacilityId" ColumnName="ParentFacilityId" />
+          <ScalarProperty Name="FacilityName" ColumnName="FacilityName" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_FacilityMap">
+      <EntityTypeMapping TypeName="GMSLocModel.map_FacilityMap">
+        <MappingFragment StoreEntitySet="map_FacilityMap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapFileName" ColumnName="MapFileName" />
+          <ScalarProperty Name="MapWidth" ColumnName="MapWidth" />
+          <ScalarProperty Name="MapHeight" ColumnName="MapHeight" />
+          <ScalarProperty Name="FacilitySouthNorth" ColumnName="FacilitySouthNorth" />
+          <ScalarProperty Name="FacilityEastWest" ColumnName="FacilityEastWest" />
+          <ScalarProperty Name="FacilityFloorHeight" ColumnName="FacilityFloorHeight" />
+          <ScalarProperty Name="FacilityCeilingHeight" ColumnName="FacilityCeilingHeight" />
+          <ScalarProperty Name="IsDisabled" ColumnName="IsDisabled" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_LocationGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.map_LocationGroup">
+        <MappingFragment StoreEntitySet="map_LocationGroup">
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_LocationGroupInfo">
+      <EntityTypeMapping TypeName="GMSLocModel.map_LocationGroupInfo">
+        <MappingFragment StoreEntitySet="map_LocationGroupInfo">
+          <ScalarProperty Name="LocationGroupId" ColumnName="LocationGroupId" />
+          <ScalarProperty Name="LocationGroupName" ColumnName="LocationGroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_LocationRelation">
+      <EntityTypeMapping TypeName="GMSLocModel.map_LocationRelation">
+        <MappingFragment StoreEntitySet="map_LocationRelation">
+          <ScalarProperty Name="FromCoordinatesId" ColumnName="FromCoordinatesId" />
+          <ScalarProperty Name="ToCoordinatesId" ColumnName="ToCoordinatesId" />
+          <ScalarProperty Name="NextCoordinatesId" ColumnName="NextCoordinatesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_MapArea">
+      <EntityTypeMapping TypeName="GMSLocModel.map_MapArea">
+        <MappingFragment StoreEntitySet="map_MapArea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+          <ScalarProperty Name="CoordinatesArray" ColumnName="CoordinatesArray" />
+          <ScalarProperty Name="LinkedMapId" ColumnName="LinkedMapId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_MapAreaCoverage">
+      <EntityTypeMapping TypeName="GMSLocModel.map_MapAreaCoverage">
+        <MappingFragment StoreEntitySet="map_MapAreaCoverage">
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_MapAreaGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.map_MapAreaGroup">
+        <MappingFragment StoreEntitySet="map_MapAreaGroup">
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="AreaGroupId" ColumnName="AreaGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_MapAreaGroupInfo">
+      <EntityTypeMapping TypeName="GMSLocModel.map_MapAreaGroupInfo">
+        <MappingFragment StoreEntitySet="map_MapAreaGroupInfo">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_MapRoute">
+      <EntityTypeMapping TypeName="GMSLocModel.map_MapRoute">
+        <MappingFragment StoreEntitySet="map_MapRoute">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="Endpoint1" ColumnName="Endpoint1" />
+          <ScalarProperty Name="Endpoint2" ColumnName="Endpoint2" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="CoordinatesArray" ColumnName="CoordinatesArray" />
+          <ScalarProperty Name="TotalDistance" ColumnName="TotalDistance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_NeighborRoute">
+      <EntityTypeMapping TypeName="GMSLocModel.map_NeighborRoute">
+        <MappingFragment StoreEntitySet="map_NeighborRoute">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="EndPoint1" ColumnName="EndPoint1" />
+          <ScalarProperty Name="EndPoint2" ColumnName="EndPoint2" />
+          <ScalarProperty Name="PointArray" ColumnName="PointArray" />
+          <ScalarProperty Name="CoordinatesArray" ColumnName="CoordinatesArray" />
+          <ScalarProperty Name="TotalDistance" ColumnName="TotalDistance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitor_APStatus">
+      <EntityTypeMapping TypeName="GMSLocModel.monitor_APStatus">
+        <MappingFragment StoreEntitySet="monitor_APStatus">
+          <ScalarProperty Name="APId" ColumnName="APId" />
+          <ScalarProperty Name="PingStatus" ColumnName="PingStatus" />
+          <ScalarProperty Name="Http80Status" ColumnName="Http80Status" />
+          <ScalarProperty Name="Telnet23Status" ColumnName="Telnet23Status" />
+          <ScalarProperty Name="APLocatorStatus" ColumnName="APLocatorStatus" />
+          <ScalarProperty Name="IPMacMatchingStatus" ColumnName="IPMacMatchingStatus" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitor_RecordRssi">
+      <EntityTypeMapping TypeName="GMSLocModel.monitor_RecordRssi">
+        <MappingFragment StoreEntitySet="monitor_RecordRssi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TagMac" ColumnName="TagMac" />
+          <ScalarProperty Name="Rssi_1" ColumnName="Rssi_1" />
+          <ScalarProperty Name="Rssi_2" ColumnName="Rssi_2" />
+          <ScalarProperty Name="Rssi_3" ColumnName="Rssi_3" />
+          <ScalarProperty Name="Rssi_4" ColumnName="Rssi_4" />
+          <ScalarProperty Name="Rssi_5" ColumnName="Rssi_5" />
+          <ScalarProperty Name="Rssi_6" ColumnName="Rssi_6" />
+          <ScalarProperty Name="Rssi_7" ColumnName="Rssi_7" />
+          <ScalarProperty Name="Rssi_8" ColumnName="Rssi_8" />
+          <ScalarProperty Name="Rssi_9" ColumnName="Rssi_9" />
+          <ScalarProperty Name="Rssi_10" ColumnName="Rssi_10" />
+          <ScalarProperty Name="updateTime" ColumnName="updateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitor_TagAlert">
+      <EntityTypeMapping TypeName="GMSLocModel.monitor_TagAlert">
+        <MappingFragment StoreEntitySet="monitor_TagAlert">
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="MasterUserId" ColumnName="MasterUserId" />
+          <ScalarProperty Name="AlertType" ColumnName="AlertType" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="AlertLevel" ColumnName="AlertLevel" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="HistoryLogId" ColumnName="HistoryLogId" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitor_TagEventStatus">
+      <EntityTypeMapping TypeName="GMSLocModel.monitor_TagEventStatus">
+        <MappingFragment StoreEntitySet="monitor_TagEventStatus">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventStatus" ColumnName="EventStatus" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitor_TagPositionStatus">
+      <EntityTypeMapping TypeName="GMSLocModel.monitor_TagPositionStatus">
+        <MappingFragment StoreEntitySet="monitor_TagPositionStatus">
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="Z" ColumnName="Z" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="object_HostGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.object_HostGroup">
+        <MappingFragment StoreEntitySet="object_HostGroup">
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="HostGroupId" ColumnName="HostGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="object_HostGroupInfo">
+      <EntityTypeMapping TypeName="GMSLocModel.object_HostGroupInfo">
+        <MappingFragment StoreEntitySet="object_HostGroupInfo">
+          <ScalarProperty Name="HostGroupId" ColumnName="HostGroupId" />
+          <ScalarProperty Name="HostGroupName" ColumnName="HostGroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ParentGroupId" ColumnName="ParentGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="object_HostStatus">
+      <EntityTypeMapping TypeName="GMSLocModel.object_HostStatus">
+        <MappingFragment StoreEntitySet="object_HostStatus">
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="HostStatusType" ColumnName="HostStatusType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="object_HostTag">
+      <EntityTypeMapping TypeName="GMSLocModel.object_HostTag">
+        <MappingFragment StoreEntitySet="object_HostTag">
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="HostExternalId" ColumnName="HostExternalId" />
+          <ScalarProperty Name="HostType" ColumnName="HostType" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_ActiveCoordinates">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_ActiveCoordinates">
+        <MappingFragment StoreEntitySet="plugin_ActiveCoordinates">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EndPoint" ColumnName="EndPoint" />
+          <ScalarProperty Name="RoutePointArray" ColumnName="RoutePointArray" />
+          <ScalarProperty Name="TimeLimited" ColumnName="TimeLimited" />
+          <ScalarProperty Name="ActiveType" ColumnName="ActiveType" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_AnchorCamera">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_AnchorCamera">
+        <MappingFragment StoreEntitySet="plugin_AnchorCamera">
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="CoordinateID" ColumnName="CoordinateID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_AnchorCameraShangHai">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_AnchorCameraShangHai">
+        <MappingFragment StoreEntitySet="plugin_AnchorCameraShangHai">
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="CoordinateID" ColumnName="CoordinateID" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="Channel" ColumnName="Channel" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="OSDHostName" ColumnName="OSDHostName" />
+          <ScalarProperty Name="B_CameraIP" ColumnName="B_CameraIP" />
+          <ScalarProperty Name="B_iChannel" ColumnName="B_iChannel" />
+          <ScalarProperty Name="B_Port" ColumnName="B_Port" />
+          <ScalarProperty Name="B_User" ColumnName="B_User" />
+          <ScalarProperty Name="B_Pwd" ColumnName="B_Pwd" />
+          <ScalarProperty Name="VideoType" ColumnName="VideoType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_AreaWarningRule">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_AreaWarningRule">
+        <MappingFragment StoreEntitySet="plugin_AreaWarningRule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="EnableToAllTags" ColumnName="EnableToAllTags" />
+          <ScalarProperty Name="AreaEventType" ColumnName="AreaEventType" />
+          <ScalarProperty Name="IsDisabled" ColumnName="IsDisabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_AreaWarningRuleCoverage">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_AreaWarningRuleCoverage">
+        <MappingFragment StoreEntitySet="plugin_AreaWarningRuleCoverage">
+          <ScalarProperty Name="RuleId" ColumnName="RuleId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_CoordinatesCamera">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_CoordinatesCamera">
+        <MappingFragment StoreEntitySet="plugin_CoordinatesCamera">
+          <ScalarProperty Name="CoordinatesId" ColumnName="CoordinatesId" />
+          <ScalarProperty Name="CameraIP" ColumnName="CameraIP" />
+          <ScalarProperty Name="iChannel" ColumnName="iChannel" />
+          <ScalarProperty Name="CameraIPlref" ColumnName="CameraIPlref" />
+          <ScalarProperty Name="iChannelref" ColumnName="iChannelref" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_CulpritRoomReference">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_CulpritRoomReference">
+        <MappingFragment StoreEntitySet="plugin_CulpritRoomReference">
+          <ScalarProperty Name="CulpritId" ColumnName="CulpritId" />
+          <ScalarProperty Name="JailRoomId" ColumnName="JailRoomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plugin_GoupCoordinates">
+      <EntityTypeMapping TypeName="GMSLocModel.Plugin_GoupCoordinates">
+        <MappingFragment StoreEntitySet="Plugin_GoupCoordinates">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PointArray" ColumnName="PointArray" />
+          <ScalarProperty Name="ArraginID" ColumnName="ArraginID" />
+          <ScalarProperty Name="PrisonerID" ColumnName="PrisonerID" />
+          <ScalarProperty Name="GoupUseful" ColumnName="GoupUseful" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="IsDisabled" ColumnName="IsDisabled" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_InterrogationLog">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_InterrogationLog">
+        <MappingFragment StoreEntitySet="plugin_InterrogationLog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="PoliceId" ColumnName="PoliceId" />
+          <ScalarProperty Name="CulpritId" ColumnName="CulpritId" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_Menu">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_Menu">
+        <MappingFragment StoreEntitySet="plugin_Menu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="MenuText" ColumnName="MenuText" />
+          <ScalarProperty Name="MenuImgSrc" ColumnName="MenuImgSrc" />
+          <ScalarProperty Name="SortNum" ColumnName="SortNum" />
+          <ScalarProperty Name="pcID" ColumnName="pcID" />
+          <ScalarProperty Name="IsAvailable" ColumnName="IsAvailable" />
+          <ScalarProperty Name="IsAvailableInTab" ColumnName="IsAvailableInTab" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="IsHotKey" ColumnName="IsHotKey" />
+          <ScalarProperty Name="HotKeySortNum" ColumnName="HotKeySortNum" />
+          <ScalarProperty Name="IsUnFold" ColumnName="IsUnFold" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_MenuGroup">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_MenuGroup">
+        <MappingFragment StoreEntitySet="plugin_MenuGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="IsAvailable" ColumnName="IsAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_MenuLink">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_MenuLink">
+        <MappingFragment StoreEntitySet="plugin_MenuLink">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="LinkText" ColumnName="LinkText" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="IsAvailable" ColumnName="IsAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_PageConfig">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_PageConfig">
+        <MappingFragment StoreEntitySet="plugin_PageConfig">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteMap" ColumnName="SiteMap" />
+          <ScalarProperty Name="ClassFullName" ColumnName="ClassFullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_PositionRecord">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_PositionRecord">
+        <MappingFragment StoreEntitySet="plugin_PositionRecord">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ObjectTagMac" ColumnName="ObjectTagMac" />
+          <ScalarProperty Name="LocationTagMac" ColumnName="LocationTagMac" />
+          <ScalarProperty Name="SignalQuality" ColumnName="SignalQuality" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_ProcessResult">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_ProcessResult">
+        <MappingFragment StoreEntitySet="plugin_ProcessResult">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_SecurityLog">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_SecurityLog">
+        <MappingFragment StoreEntitySet="plugin_SecurityLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="TagUserId" ColumnName="TagUserId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_TagUser">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_TagUser">
+        <MappingFragment StoreEntitySet="plugin_TagUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_TagUserType">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_TagUserType">
+        <MappingFragment StoreEntitySet="plugin_TagUserType">
+          <ScalarProperty Name="TypeNum" ColumnName="TypeNum" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plugin_WarningRecord">
+      <EntityTypeMapping TypeName="GMSLocModel.plugin_WarningRecord">
+        <MappingFragment StoreEntitySet="plugin_WarningRecord">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ObjectTagMac" ColumnName="ObjectTagMac" />
+          <ScalarProperty Name="WarningType" ColumnName="WarningType" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_AlertStatus_Type">
+      <EntityTypeMapping TypeName="GMSLocModel.Report_AlertStatus_Type">
+        <MappingFragment StoreEntitySet="Report_AlertStatus_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="tAreaEvent" ColumnName="tAreaEvent" />
+          <ScalarProperty Name="tAbsent" ColumnName="tAbsent" />
+          <ScalarProperty Name="tBatteryInsufficient" ColumnName="tBatteryInsufficient" />
+          <ScalarProperty Name="tBatteryReset" ColumnName="tBatteryReset" />
+          <ScalarProperty Name="tButtonPressed" ColumnName="tButtonPressed" />
+          <ScalarProperty Name="tWristletBroken" ColumnName="tWristletBroken" />
+          <ScalarProperty Name="tAPLocatorDown" ColumnName="tAPLocatorDown" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_AlertType_Status">
+      <EntityTypeMapping TypeName="GMSLocModel.Report_AlertType_Status">
+        <MappingFragment StoreEntitySet="Report_AlertType_Status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="tType" ColumnName="tType" />
+          <ScalarProperty Name="sNew" ColumnName="sNew" />
+          <ScalarProperty Name="sProcessing" ColumnName="sProcessing" />
+          <ScalarProperty Name="sResolved" ColumnName="sResolved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_TotalCount">
+      <EntityTypeMapping TypeName="GMSLocModel.Report_TotalCount">
+        <MappingFragment StoreEntitySet="Report_TotalCount">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sNew" ColumnName="sNew" />
+          <ScalarProperty Name="sProcessing" ColumnName="sProcessing" />
+          <ScalarProperty Name="sResolved" ColumnName="sResolved" />
+          <ScalarProperty Name="sTotal" ColumnName="sTotal" />
+          <ScalarProperty Name="tAreaEvent" ColumnName="tAreaEvent" />
+          <ScalarProperty Name="tAbsent" ColumnName="tAbsent" />
+          <ScalarProperty Name="tBatteryInsufficient" ColumnName="tBatteryInsufficient" />
+          <ScalarProperty Name="tBatteryReset" ColumnName="tBatteryReset" />
+          <ScalarProperty Name="tButtonPressed" ColumnName="tButtonPressed" />
+          <ScalarProperty Name="tWristletBroken" ColumnName="tWristletBroken" />
+          <ScalarProperty Name="tAPLocatorDown" ColumnName="tAPLocatorDown" />
+          <ScalarProperty Name="tTotal" ColumnName="tTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_BackupLogConfig">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_BackupLogConfig">
+        <MappingFragment StoreEntitySet="sys_BackupLogConfig">
+          <ScalarProperty Name="FieldType" ColumnName="FieldType" />
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+          <ScalarProperty Name="DateFieldName" ColumnName="DateFieldName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_Calibration">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_Calibration">
+        <MappingFragment StoreEntitySet="sys_Calibration">
+          <ScalarProperty Name="GoupId" ColumnName="GoupId" />
+          <ScalarProperty Name="Rssi" ColumnName="Rssi" />
+          <ScalarProperty Name="GoodTagSignal" ColumnName="GoodTagSignal" />
+          <ScalarProperty Name="TagOutRangeRssi" ColumnName="TagOutRangeRssi" />
+          <ScalarProperty Name="TagAbsendIntervalInLocating" ColumnName="TagAbsendIntervalInLocating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_DefaultDisabledAccess">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_DefaultDisabledAccess">
+        <MappingFragment StoreEntitySet="sys_DefaultDisabledAccess">
+          <ScalarProperty Name="pcID" ColumnName="pcID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_Diary">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_Diary">
+        <MappingFragment StoreEntitySet="sys_Diary">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TagId" ColumnName="TagId" />
+          <ScalarProperty Name="HostId" ColumnName="HostId" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_DisabledAccess">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_DisabledAccess">
+        <MappingFragment StoreEntitySet="sys_DisabledAccess">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="pcID" ColumnName="pcID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_SystemConfig">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_SystemConfig">
+        <MappingFragment StoreEntitySet="sys_SystemConfig">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="UIName" ColumnName="UIName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="InputMode" ColumnName="InputMode" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_Task">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_Task">
+        <MappingFragment StoreEntitySet="sys_Task">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="CommandXml" ColumnName="CommandXml" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="ExecuteTime" ColumnName="ExecuteTime" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_User">
+      <EntityTypeMapping TypeName="GMSLocModel.sys_User">
+        <MappingFragment StoreEntitySet="sys_User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

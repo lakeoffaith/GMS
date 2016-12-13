@@ -1,5 +1,0 @@
-F:\c\GMS\GMS\bin\GMS.OA.Contract.dll
-F:\c\GMS\GMS\bin\GMS.OA.Contract.pdb
-F:\c\GMS\GMS\Src\GMS.OA.Contract\obj\Debug\GMS.OA.Contract.dll
-F:\c\GMS\GMS\Src\GMS.OA.Contract\obj\Debug\GMS.OA.Contract.pdb
-F:\c\GMS\GMS\Src\GMS.OA.Contract\obj\Debug\GMS.OA.Contract.csprojResolveAssemblyReference.cache

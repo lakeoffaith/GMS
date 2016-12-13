@@ -2,26 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GMS.Framework.Contract;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-
+using GMS.Framework.Contract;
 namespace GMS.Account.Contract
 {
     [Auditable]
     [Table("Role")]
-    public class Role : ModelBase   
+    public class Role
     {
-        [Required(ErrorMessage = "角色名不能为空")]
-        public string Name { get; set; }
-        public string Info { get; set; }
+        public int ID { set; get; }
+        public DateTime CreateTime { set; get; }
 
-        public virtual List<User> Users { get; set; }
+        public string Name { set; get; }
 
+        public string Info { set; get; }
 
-        public string BusinessPermissionString { get; set; }
+        public virtual List<User> Users { set; get; }
 
-        [NotMapped]
+        public string BusinessPermissionString { set; get; }
+
         public List<EnumBusinessPermission> BusinessPermissionList
         {
             get
@@ -33,7 +33,7 @@ namespace GMS.Account.Contract
             }
             set
             {
-                BusinessPermissionString = string.Join(",", value.Select(p => (int)p));
+                BusinessPermissionString = string.Join(",",value.Select(p=>(int)p));
             }
         }
     }

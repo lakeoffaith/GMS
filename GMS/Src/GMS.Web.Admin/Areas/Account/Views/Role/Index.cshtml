@@ -2,8 +2,8 @@
 @using GMS.Framework.Utility
 @using GMS.Framework.Web.Controls
 @using GMS.Account.Contract
-
 @model PagedList<Role>
+@using Webdiyer.WebControls.Mvc
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -80,6 +80,6 @@
 </table>
 }
 <div class="dataTables_paginate paging_bootstrap pagination">
-    @Html.Pager(Model, new PagerOptions() { ShowTotalItemCount = true })
+    @Html.Pager(Model, new PagerOptions() {  })
 </div>
 

@@ -40,6 +40,9 @@
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Webdiyer.MvcPager">
+      <HintPath>..\packages\Webdiyer.MvcPager.3.0.1.1\lib\Webdiyer.MvcPager.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthorizeFilterAttribute.cs" />
@@ -47,10 +50,6 @@
     <Compile Include="ControllerBase.cs" />
     <Compile Include="Controls\CheckBoxList.cs" />
     <Compile Include="Controls\HtmlPrefixScope.cs" />
-    <Compile Include="Controls\MvcPager\PagerBuilder.cs" />
-    <Compile Include="Controls\MvcPager\PagerHelper.cs" />
-    <Compile Include="Controls\MvcPager\PagerItem.cs" />
-    <Compile Include="Controls\MvcPager\PagerOptions.cs" />
     <Compile Include="Controls\RadioBoxList.cs" />
     <Compile Include="Controls\SeoPager.cs" />
     <Compile Include="ExplicitException.cs" />
@@ -66,6 +65,12 @@
       <Project>{9F519EF8-800F-40CB-9545-9AEADF0F387D}</Project>
       <Name>GMS.Framework.Utility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\MvcPager\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

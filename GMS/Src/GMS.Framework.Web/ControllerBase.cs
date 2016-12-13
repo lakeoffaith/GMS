@@ -144,7 +144,7 @@ namespace GMS.Framework.Web
             base.OnActionExecuting(filterContext);
 
             //在方法执行前，附加上PageSize值
-            filterContext.ActionParameters.Values.Where(v => v is Request).ToList().ForEach(v => ((Request)v).PageSize = this.PageSize);
+            //filterContext.ActionParameters.Values.Where(v => v is Request).ToList().ForEach(v => ((Request)v).PageSize = this.PageSize);
         }
 
         /// <summary>

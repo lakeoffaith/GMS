@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GMSLocModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="GMSLocEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="config_SurveyGroup" EntityType="GMSLocModel.config_SurveyGroup" />
+    <EntitySet Name="config_TagGroup" EntityType="GMSLocModel.config_TagGroup" />
+    <EntitySet Name="config_TagGroupCoverage" EntityType="GMSLocModel.config_TagGroupCoverage" />
+    <EntitySet Name="config_TagLocateSetting" EntityType="GMSLocModel.config_TagLocateSetting" />
+    <EntitySet Name="device_AP" EntityType="GMSLocModel.device_AP" />
+    <EntitySet Name="device_APSetting" EntityType="GMSLocModel.device_APSetting" />
+    <EntitySet Name="device_Tag" EntityType="GMSLocModel.device_Tag" />
+    <EntitySet Name="device_TagHost" EntityType="GMSLocModel.device_TagHost" />
+    <EntitySet Name="device_TagSetting" EntityType="GMSLocModel.device_TagSetting" />
+    <EntitySet Name="History_Activity" EntityType="GMSLocModel.History_Activity" />
+    <EntitySet Name="history_AlertProcessLog" EntityType="GMSLocModel.history_AlertProcessLog" />
+    <EntitySet Name="history_APLocatorLog" EntityType="GMSLocModel.history_APLocatorLog" />
+    <EntitySet Name="history_AreaEventLog" EntityType="GMSLocModel.history_AreaEventLog" />
+    <EntitySet Name="history_GenericEventLog" EntityType="GMSLocModel.history_GenericEventLog" />
+    <EntitySet Name="history_GetAllRecords" EntityType="GMSLocModel.history_GetAllRecords" />
+    <EntitySet Name="history_TagPositionLog" EntityType="GMSLocModel.history_TagPositionLog" />
+    <EntitySet Name="map_APCoverage" EntityType="GMSLocModel.map_APCoverage" />
+    <EntitySet Name="map_APNearArea" EntityType="GMSLocModel.map_APNearArea" />
+    <EntitySet Name="map_Coordinates" EntityType="GMSLocModel.map_Coordinates" />
+    <EntitySet Name="map_CoordinatesWithAPRssi" EntityType="GMSLocModel.map_CoordinatesWithAPRssi" />
+    <EntitySet Name="map_Facility" EntityType="GMSLocModel.map_Facility" />
+    <EntitySet Name="map_FacilityMap" EntityType="GMSLocModel.map_FacilityMap" />
+    <EntitySet Name="map_LocationGroup" EntityType="GMSLocModel.map_LocationGroup" />
+    <EntitySet Name="map_LocationGroupInfo" EntityType="GMSLocModel.map_LocationGroupInfo" />
+    <EntitySet Name="map_LocationRelation" EntityType="GMSLocModel.map_LocationRelation" />
+    <EntitySet Name="map_MapArea" EntityType="GMSLocModel.map_MapArea" />
+    <EntitySet Name="map_MapAreaCoverage" EntityType="GMSLocModel.map_MapAreaCoverage" />
+    <EntitySet Name="map_MapAreaGroup" EntityType="GMSLocModel.map_MapAreaGroup" />
+    <EntitySet Name="map_MapAreaGroupInfo" EntityType="GMSLocModel.map_MapAreaGroupInfo" />
+    <EntitySet Name="map_MapRoute" EntityType="GMSLocModel.map_MapRoute" />
+    <EntitySet Name="map_NeighborRoute" EntityType="GMSLocModel.map_NeighborRoute" />
+    <EntitySet Name="monitor_APStatus" EntityType="GMSLocModel.monitor_APStatus" />
+    <EntitySet Name="monitor_RecordRssi" EntityType="GMSLocModel.monitor_RecordRssi" />
+    <EntitySet Name="monitor_TagAlert" EntityType="GMSLocModel.monitor_TagAlert" />
+    <EntitySet Name="monitor_TagEventStatus" EntityType="GMSLocModel.monitor_TagEventStatus" />
+    <EntitySet Name="monitor_TagPositionStatus" EntityType="GMSLocModel.monitor_TagPositionStatus" />
+    <EntitySet Name="object_HostGroup" EntityType="GMSLocModel.object_HostGroup" />
+    <EntitySet Name="object_HostGroupInfo" EntityType="GMSLocModel.object_HostGroupInfo" />
+    <EntitySet Name="object_HostStatus" EntityType="GMSLocModel.object_HostStatus" />
+    <EntitySet Name="object_HostTag" EntityType="GMSLocModel.object_HostTag" />
+    <EntitySet Name="plugin_ActiveCoordinates" EntityType="GMSLocModel.plugin_ActiveCoordinates" />
+    <EntitySet Name="plugin_AnchorCamera" EntityType="GMSLocModel.plugin_AnchorCamera" />
+    <EntitySet Name="plugin_AnchorCameraShangHai" EntityType="GMSLocModel.plugin_AnchorCameraShangHai" />
+    <EntitySet Name="plugin_AreaWarningRule" EntityType="GMSLocModel.plugin_AreaWarningRule" />
+    <EntitySet Name="plugin_AreaWarningRuleCoverage" EntityType="GMSLocModel.plugin_AreaWarningRuleCoverage" />
+    <EntitySet Name="plugin_CoordinatesCamera" EntityType="GMSLocModel.plugin_CoordinatesCamera" />
+    <EntitySet Name="plugin_CulpritRoomReference" EntityType="GMSLocModel.plugin_CulpritRoomReference" />
+    <EntitySet Name="Plugin_GoupCoordinates" EntityType="GMSLocModel.Plugin_GoupCoordinates" />
+    <EntitySet Name="plugin_InterrogationLog" EntityType="GMSLocModel.plugin_InterrogationLog" />
+    <EntitySet Name="plugin_Menu" EntityType="GMSLocModel.plugin_Menu" />
+    <EntitySet Name="plugin_MenuGroup" EntityType="GMSLocModel.plugin_MenuGroup" />
+    <EntitySet Name="plugin_MenuLink" EntityType="GMSLocModel.plugin_MenuLink" />
+    <EntitySet Name="plugin_PageConfig" EntityType="GMSLocModel.plugin_PageConfig" />
+    <EntitySet Name="plugin_PositionRecord" EntityType="GMSLocModel.plugin_PositionRecord" />
+    <EntitySet Name="plugin_ProcessResult" EntityType="GMSLocModel.plugin_ProcessResult" />
+    <EntitySet Name="plugin_SecurityLog" EntityType="GMSLocModel.plugin_SecurityLog" />
+    <EntitySet Name="plugin_TagUser" EntityType="GMSLocModel.plugin_TagUser" />
+    <EntitySet Name="plugin_TagUserType" EntityType="GMSLocModel.plugin_TagUserType" />
+    <EntitySet Name="plugin_WarningRecord" EntityType="GMSLocModel.plugin_WarningRecord" />
+    <EntitySet Name="Report_AlertStatus_Type" EntityType="GMSLocModel.Report_AlertStatus_Type" />
+    <EntitySet Name="Report_AlertType_Status" EntityType="GMSLocModel.Report_AlertType_Status" />
+    <EntitySet Name="Report_TotalCount" EntityType="GMSLocModel.Report_TotalCount" />
+    <EntitySet Name="sys_BackupLogConfig" EntityType="GMSLocModel.sys_BackupLogConfig" />
+    <EntitySet Name="sys_Calibration" EntityType="GMSLocModel.sys_Calibration" />
+    <EntitySet Name="sys_DefaultDisabledAccess" EntityType="GMSLocModel.sys_DefaultDisabledAccess" />
+    <EntitySet Name="sys_Diary" EntityType="GMSLocModel.sys_Diary" />
+    <EntitySet Name="sys_DisabledAccess" EntityType="GMSLocModel.sys_DisabledAccess" />
+    <EntitySet Name="sys_SystemConfig" EntityType="GMSLocModel.sys_SystemConfig" />
+    <EntitySet Name="sys_Task" EntityType="GMSLocModel.sys_Task" />
+    <EntitySet Name="sys_User" EntityType="GMSLocModel.sys_User" />
+    <AssociationSet Name="FK_gi" Association="GMSLocModel.FK_gi">
+      <End Role="map_MapAreaGroupInfo" EntitySet="map_MapAreaGroupInfo" />
+      <End Role="map_MapAreaGroup" EntitySet="map_MapAreaGroup" />
+    </AssociationSet>
+    <AssociationSet Name="fk_pcID" Association="GMSLocModel.fk_pcID">
+      <End Role="plugin_PageConfig" EntitySet="plugin_PageConfig" />
+      <End Role="plugin_Menu" EntitySet="plugin_Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ddacc_R_pc" Association="GMSLocModel.FK_ddacc_R_pc">
+      <End Role="plugin_PageConfig" EntitySet="plugin_PageConfig" />
+      <End Role="sys_DefaultDisabledAccess" EntitySet="sys_DefaultDisabledAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_disacc_R_pageconfig" Association="GMSLocModel.FK_disacc_R_pageconfig">
+      <End Role="plugin_PageConfig" EntitySet="plugin_PageConfig" />
+      <End Role="sys_DisabledAccess" EntitySet="sys_DisabledAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_disacc_R_sysuser" Association="GMSLocModel.FK_disacc_R_sysuser">
+      <End Role="sys_User" EntitySet="sys_User" />
+      <End Role="sys_DisabledAccess" EntitySet="sys_DisabledAccess" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="config_SurveyGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SurveyGroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="config_TagGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="GroupIcon" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="GroupDescription" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="config_TagGroupCoverage">
+    <Key>
+      <PropertyRef Name="TagId" />
+      <PropertyRef Name="TagGroupId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="TagGroupId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="config_TagLocateSetting">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="LocatingMode" Type="Byte" Nullable="false" />
+    <Property Name="ScanMode" Type="Byte" Nullable="false" />
+    <Property Name="ScanTarget" Type="Byte" Nullable="false" />
+    <Property Name="ScanSsid" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="ScanChannels" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="ScanInterval" Type="Int32" Nullable="false" />
+    <Property Name="SurveyGroupId" Type="Int32" Nullable="false" />
+    <Property Name="RssiBackCount" Type="Int32" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CommandState" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="device_AP">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CoordinatesId" />
+      <PropertyRef Name="APMac" />
+      <PropertyRef Name="APName" />
+      <PropertyRef Name="SelfIP" />
+      <PropertyRef Name="LoginName" />
+      <PropertyRef Name="LoginPassword" />
+      <PropertyRef Name="ProductType" />
+      <PropertyRef Name="MaxRssiValueByAP" />
+      <PropertyRef Name="MaxRssivalueByTag" />
+      <PropertyRef Name="WriteTime" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="APMac" Type="String" Nullable="false" MaxLength="17" Unicode="false" FixedLength="true" />
+    <Property Name="APName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SelfIP" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="LoginName" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="LoginPassword" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Manufacturer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="APModel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductType" Type="Byte" Nullable="false" />
+    <Property Name="SerialNo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Desciption" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="MaxRssiValueByAP" Type="Int32" Nullable="false" />
+    <Property Name="MaxRssivalueByTag" Type="Int32" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="device_APSetting">
+    <Key>
+      <PropertyRef Name="APId" />
+    </Key>
+    <Property Name="APId" Type="Int32" Nullable="false" />
+    <Property Name="APMode" Type="Byte" Nullable="false" />
+    <Property Name="Ssid" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Channel" Type="Byte" Nullable="false" />
+    <Property Name="Security" Type="Byte" Nullable="false" />
+    <Property Name="Encrypt" Type="Byte" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="LocatingEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LocatingScanDuration" Type="Byte" Nullable="false" />
+    <Property Name="LocatingScanType" Type="Byte" Nullable="false" />
+    <Property Name="LocatingMacFilterEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LocatingMacFilter" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="TempFileSize" Type="Int32" Nullable="false" />
+    <Property Name="ServerIP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ServerPort" Type="Int32" Nullable="false" />
+    <Property Name="NtpEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="TimeZone" Type="Double" Nullable="false" />
+    <Property Name="SummerTime" Type="Byte" Nullable="false" />
+    <Property Name="NtpServer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="WebRemoteEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="WebRemotePort" Type="Int32" Nullable="false" />
+    <Property Name="WanMode" Type="Byte" Nullable="false" />
+    <Property Name="WanStaticIp" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="WanNetMask" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="WanGateWay" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="WanDns" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LanStaticIp" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="LanNetMask" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="LanGateWay" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="LanDns" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="APMacFilterStatus" Type="Byte" Nullable="false" />
+    <Property Name="APMacFilter" Type="String" MaxLength="2400" Unicode="false" FixedLength="false" />
+    <Property Name="WirelessNetworkMode" Type="Byte" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="WizardEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="WizardPort" Type="Int32" Nullable="false" />
+    <Property Name="CacheFileEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="CacheFileSize" Type="Int32" Nullable="false" />
+    <Property Name="MisCodeEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="device_Tag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagMac" Type="String" Nullable="false" MaxLength="17" Unicode="false" FixedLength="true" />
+    <Property Name="TagName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SerialNo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ProductType" Type="Byte" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="device_TagHost">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="HostType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HostName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="device_TagSetting">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="FirmwareVersion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="WorkingStatus" Type="Byte" Nullable="false" />
+    <Property Name="CurrentIP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="HelloInterval" Type="Byte" Nullable="false" />
+    <Property Name="ServerIP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ServerPort" Type="Int32" Nullable="false" />
+    <Property Name="IsAutoConnectToAP" Type="Boolean" Nullable="false" />
+    <Property Name="APSsid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="APChannel" Type="Byte" Nullable="false" />
+    <Property Name="APSecurity" Type="Byte" Nullable="false" />
+    <Property Name="APEncryption" Type="Byte" Nullable="false" />
+    <Property Name="APPassword" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="APMaxConnection" Type="Int32" Nullable="false" />
+    <Property Name="APChangeMinRssi" Type="Int32" Nullable="false" />
+    <Property Name="DhcpEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="DhcpStaticIP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="DhcpGateWay" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="DhcpMask" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ButtonMessageEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ButtonMessageBody" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="MotionMessageEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="MotionMessageInterval" Type="Int32" Nullable="false" />
+    <Property Name="TemperatureEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="TemperatureMinValue" Type="Double" Nullable="false" />
+    <Property Name="TemperatureMaxValue" Type="Double" Nullable="false" />
+    <Property Name="TemperatureMessageInterval" Type="Int32" Nullable="false" />
+    <Property Name="ScanEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ScanType" Type="Byte" Nullable="false" />
+    <Property Name="ScanSsid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ScanInterval" Type="Byte" Nullable="false" />
+    <Property Name="ScanChannel" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="ScanBackCount" Type="Byte" Nullable="false" />
+    <Property Name="RssiCalculateMethod" Type="Byte" Nullable="false" />
+    <Property Name="ScanMinTime" Type="Int32" Nullable="false" />
+    <Property Name="ScanMaxTime" Type="Int32" Nullable="false" />
+    <Property Name="LowBatteryValue" Type="Double" Nullable="false" />
+    <Property Name="CurrentBatteryValue" Type="Double" Nullable="false" />
+    <Property Name="PowerSaverModeEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="PowerSaverModeTimer" Type="Int32" Nullable="false" />
+    <Property Name="BeepEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="BeeperInterval" Type="Int32" Nullable="false" />
+    <Property Name="BeeperHoldTime" Type="Int32" Nullable="false" />
+    <Property Name="BeeperCount" Type="Int32" Nullable="false" />
+    <Property Name="LedColor" Type="Int32" Nullable="false" />
+    <Property Name="LedCount" Type="Int32" Nullable="false" />
+    <Property Name="LedHoldTime" Type="Int32" Nullable="false" />
+    <Property Name="LedInterval" Type="Int32" Nullable="false" />
+    <Property Name="LedEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ScanMarkEnable" Type="Boolean" Nullable="false" />
+    <Property Name="ScanMarkDetectInterval" Type="Int32" Nullable="false" />
+    <Property Name="ScanMarkScanTime" Type="Int32" Nullable="false" />
+    <Property Name="ScanMarkScanInterval" Type="Int32" Nullable="false" />
+    <Property Name="ScanMarkScanCount" Type="Int32" Nullable="false" />
+    <Property Name="ScanMarkGoodSignal" Type="Int32" Nullable="false" />
+    <Property Name="ScanMarkLocatingInterval" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="History_Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArraginID" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="PrisonerID" Type="Int32" Nullable="false" />
+    <Property Name="RouteId" Type="Int32" Nullable="false" />
+    <Property Name="SetTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RemoveTime" Type="DateTime" Precision="3" />
+    <Property Name="ActivityInfo" Type="String" MaxLength="500" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="history_AlertProcessLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlertId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="AlertStatus" Type="Byte" Nullable="false" />
+    <Property Name="ChangeReason" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="history_APLocatorLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APLocatorId" Type="Int32" Nullable="false" />
+    <Property Name="APLocatorStatus" Type="Byte" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="history_AreaEventLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="AreaEventType" Type="Byte" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="history_GenericEventLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="GenericEventType" Type="Int32" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="history_GetAllRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TableName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Records" Type="Int32" />
+  </EntityType>
+  <EntityType Name="history_TagPositionLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="X" Type="Double" Nullable="false" />
+    <Property Name="Y" Type="Double" Nullable="false" />
+    <Property Name="Z" Type="Double" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="map_APCoverage">
+    <Key>
+      <PropertyRef Name="APId" />
+      <PropertyRef Name="MapId" />
+    </Key>
+    <Property Name="APId" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_APNearArea">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AreaId" />
+      <PropertyRef Name="LeftId" />
+      <PropertyRef Name="RightId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="LeftId" Type="Int32" Nullable="false" />
+    <Property Name="RightId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_Coordinates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="ParentId" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="X" Type="Double" Nullable="false" />
+    <Property Name="Y" Type="Double" Nullable="false" />
+    <Property Name="Z" Type="Double" Nullable="false" />
+    <Property Name="CoordinatesUsage" Type="Byte" Nullable="false" />
+    <Property Name="FixedTagID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="map_CoordinatesWithAPRssi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="StrongestAPId" Type="Int32" Nullable="false" />
+    <Property Name="SecondStrongestAPId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_Facility">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ParentFacilityId" Type="Int32" Nullable="false" />
+    <Property Name="FacilityName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="map_FacilityMap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MapFileName" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="MapWidth" Type="Int32" Nullable="false" />
+    <Property Name="MapHeight" Type="Int32" Nullable="false" />
+    <Property Name="FacilitySouthNorth" Type="Double" Nullable="false" />
+    <Property Name="FacilityEastWest" Type="Double" Nullable="false" />
+    <Property Name="FacilityFloorHeight" Type="Double" Nullable="false" />
+    <Property Name="FacilityCeilingHeight" Type="Double" Nullable="false" />
+    <Property Name="IsDisabled" Type="Boolean" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="map_LocationGroup">
+    <Key>
+      <PropertyRef Name="LocationId" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="LocationId" Type="Int32" Nullable="false" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_LocationGroupInfo">
+    <Key>
+      <PropertyRef Name="LocationGroupId" />
+    </Key>
+    <Property Name="LocationGroupId" Type="Int32" Nullable="false" />
+    <Property Name="LocationGroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="map_LocationRelation">
+    <Key>
+      <PropertyRef Name="FromCoordinatesId" />
+      <PropertyRef Name="ToCoordinatesId" />
+    </Key>
+    <Property Name="FromCoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="ToCoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="NextCoordinatesId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_MapArea">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="AreaName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CoordinatesArray" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LinkedMapId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_MapAreaCoverage">
+    <Key>
+      <PropertyRef Name="AreaId" />
+      <PropertyRef Name="CoordinatesId" />
+    </Key>
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_MapAreaGroup">
+    <Key>
+      <PropertyRef Name="AreaId" />
+      <PropertyRef Name="AreaGroupId" />
+    </Key>
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="AreaGroupId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="map_MapAreaGroupInfo" Relationship="GMSLocModel.FK_gi" FromRole="map_MapAreaGroup" ToRole="map_MapAreaGroupInfo" />
+  </EntityType>
+  <EntityType Name="map_MapAreaGroupInfo">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="map_MapAreaGroup" Relationship="GMSLocModel.FK_gi" FromRole="map_MapAreaGroupInfo" ToRole="map_MapAreaGroup" />
+  </EntityType>
+  <EntityType Name="map_MapRoute">
+    <Key>
+      <PropertyRef Name="Endpoint1" />
+      <PropertyRef Name="Endpoint2" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="Endpoint1" Type="Int32" Nullable="false" />
+    <Property Name="Endpoint2" Type="Int32" Nullable="false" />
+    <Property Name="RouteName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CoordinatesArray" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TotalDistance" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="map_NeighborRoute">
+    <Key>
+      <PropertyRef Name="EndPoint1" />
+      <PropertyRef Name="EndPoint2" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="EndPoint1" Type="Int32" Nullable="false" />
+    <Property Name="EndPoint2" Type="Int32" Nullable="false" />
+    <Property Name="PointArray" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CoordinatesArray" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="TotalDistance" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="monitor_APStatus">
+    <Key>
+      <PropertyRef Name="APId" />
+    </Key>
+    <Property Name="APId" Type="Int32" Nullable="false" />
+    <Property Name="PingStatus" Type="Byte" Nullable="false" />
+    <Property Name="Http80Status" Type="Byte" Nullable="false" />
+    <Property Name="Telnet23Status" Type="Byte" Nullable="false" />
+    <Property Name="APLocatorStatus" Type="Byte" Nullable="false" />
+    <Property Name="IPMacMatchingStatus" Type="Byte" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="monitor_RecordRssi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagMac" Type="String" Nullable="false" MaxLength="17" Unicode="false" FixedLength="true" />
+    <Property Name="Rssi_1" Type="Int32" />
+    <Property Name="Rssi_2" Type="Int32" />
+    <Property Name="Rssi_3" Type="Int32" />
+    <Property Name="Rssi_4" Type="Int32" />
+    <Property Name="Rssi_5" Type="Int32" />
+    <Property Name="Rssi_6" Type="Int32" />
+    <Property Name="Rssi_7" Type="Int32" />
+    <Property Name="Rssi_8" Type="Int32" />
+    <Property Name="Rssi_9" Type="Int32" />
+    <Property Name="Rssi_10" Type="Int32" />
+    <Property Name="updateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="monitor_TagAlert">
+    <Key>
+      <PropertyRef Name="AlertId" />
+    </Key>
+    <Property Name="AlertId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="MasterUserId" Type="Int32" Nullable="false" />
+    <Property Name="AlertType" Type="Byte" Nullable="false" />
+    <Property Name="AlertStatus" Type="Byte" Nullable="false" />
+    <Property Name="AlertLevel" Type="Byte" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="HistoryLogId" Type="Int32" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="monitor_TagEventStatus">
+    <Key>
+      <PropertyRef Name="TagId" />
+      <PropertyRef Name="EventType" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="EventType" Type="Byte" Nullable="false" />
+    <Property Name="EventStatus" Type="Byte" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="monitor_TagPositionStatus">
+    <Key>
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="MapId" Type="Int32" Nullable="false" />
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="X" Type="Double" Nullable="false" />
+    <Property Name="Y" Type="Double" Nullable="false" />
+    <Property Name="Z" Type="Double" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="object_HostGroup">
+    <Key>
+      <PropertyRef Name="HostId" />
+      <PropertyRef Name="HostGroupId" />
+    </Key>
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="HostGroupId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="object_HostGroupInfo">
+    <Key>
+      <PropertyRef Name="HostGroupId" />
+    </Key>
+    <Property Name="HostGroupId" Type="Int32" Nullable="false" />
+    <Property Name="HostGroupName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ParentGroupId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="object_HostStatus">
+    <Key>
+      <PropertyRef Name="HostId" />
+    </Key>
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="HostStatusType" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="object_HostTag">
+    <Key>
+      <PropertyRef Name="HostId" />
+    </Key>
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="HostExternalId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HostType" Type="Byte" Nullable="false" />
+    <Property Name="HostName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="plugin_ActiveCoordinates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EndPoint" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="true" />
+    <Property Name="RoutePointArray" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="true" />
+    <Property Name="TimeLimited" Type="Int32" Nullable="false" />
+    <Property Name="ActiveType" Type="Int32" Nullable="false" />
+    <Property Name="RouteName" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="plugin_AnchorCamera">
+    <Key>
+      <PropertyRef Name="CameraID" />
+    </Key>
+    <Property Name="CameraID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoordinateID" Type="Int32" Nullable="false" />
+    <Property Name="IP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Port" Type="Int32" Nullable="false" />
+    <Property Name="User" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pwd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="plugin_AnchorCameraShangHai">
+    <Key>
+      <PropertyRef Name="CameraID" />
+    </Key>
+    <Property Name="CameraID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoordinateID" Type="Int32" />
+    <Property Name="Index" Type="Int32" />
+    <Property Name="IP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Port" Type="Int32" />
+    <Property Name="Channel" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OSDHostName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="B_CameraIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="B_iChannel" Type="Int32" />
+    <Property Name="B_Port" Type="Int32" />
+    <Property Name="B_User" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="B_Pwd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VideoType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="plugin_AreaWarningRule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AreaId" Type="Int32" Nullable="false" />
+    <Property Name="EnableToAllTags" Type="Boolean" Nullable="false" />
+    <Property Name="AreaEventType" Type="Byte" Nullable="false" />
+    <Property Name="IsDisabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_AreaWarningRuleCoverage">
+    <Key>
+      <PropertyRef Name="RuleId" />
+      <PropertyRef Name="TagId" />
+    </Key>
+    <Property Name="RuleId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_CoordinatesCamera">
+    <Key>
+      <PropertyRef Name="CoordinatesId" />
+    </Key>
+    <Property Name="CoordinatesId" Type="Int32" Nullable="false" />
+    <Property Name="CameraIP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="iChannel" Type="Int32" Nullable="false" />
+    <Property Name="CameraIPlref" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="iChannelref" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_CulpritRoomReference">
+    <Key>
+      <PropertyRef Name="CulpritId" />
+      <PropertyRef Name="JailRoomId" />
+    </Key>
+    <Property Name="CulpritId" Type="Int32" Nullable="false" />
+    <Property Name="JailRoomId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Plugin_GoupCoordinates">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PointArray" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="ArraginID" Type="Int32" />
+    <Property Name="PrisonerID" Type="Int32" Nullable="false" />
+    <Property Name="GoupUseful" Type="Int32" Nullable="false" />
+    <Property Name="Interval" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="IsDisabled" Type="Boolean" Nullable="false" />
+    <Property Name="RouteName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="plugin_InterrogationLog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PoliceId" Type="Int32" Nullable="false" />
+    <Property Name="CulpritId" Type="Int32" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MenuText" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuImgSrc" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="SortNum" Type="Int32" />
+    <Property Name="pcID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="IsAvailable" Type="Boolean" />
+    <Property Name="IsAvailableInTab" Type="Boolean" />
+    <Property Name="Target" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="IsHotKey" Type="Boolean" />
+    <Property Name="HotKeySortNum" Type="Int32" />
+    <Property Name="IsUnFold" Type="Boolean" />
+    <NavigationProperty Name="plugin_PageConfig" Relationship="GMSLocModel.fk_pcID" FromRole="plugin_Menu" ToRole="plugin_PageConfig" />
+  </EntityType>
+  <EntityType Name="plugin_MenuGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="IsAvailable" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsAvailable" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_MenuLink">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="LinkText" />
+      <PropertyRef Name="Url" />
+      <PropertyRef Name="OrderNo" />
+      <PropertyRef Name="IsAvailable" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="LinkText" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="Int32" Nullable="false" />
+    <Property Name="IsAvailable" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_PageConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="GroupName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Source" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SiteMap" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ClassFullName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="plugin_Menu" Relationship="GMSLocModel.fk_pcID" FromRole="plugin_PageConfig" ToRole="plugin_Menu" />
+    <NavigationProperty Name="sys_DefaultDisabledAccess" Relationship="GMSLocModel.FK_ddacc_R_pc" FromRole="plugin_PageConfig" ToRole="sys_DefaultDisabledAccess" />
+    <NavigationProperty Name="sys_DisabledAccess" Relationship="GMSLocModel.FK_disacc_R_pageconfig" FromRole="plugin_PageConfig" ToRole="sys_DisabledAccess" />
+  </EntityType>
+  <EntityType Name="plugin_PositionRecord">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectTagMac" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="LocationTagMac" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="SignalQuality" Type="Int32" Nullable="false" />
+    <Property Name="Distance" Type="Double" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="plugin_ProcessResult">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="plugin_SecurityLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="TagUserId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="IP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Priority" Type="Byte" Nullable="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plugin_TagUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="UserType" Type="Byte" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Number" Type="String" Nullable="false" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="PhotoUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Memo" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="plugin_TagUserType">
+    <Key>
+      <PropertyRef Name="TypeNum" />
+    </Key>
+    <Property Name="TypeNum" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="plugin_WarningRecord">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectTagMac" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="WarningType" Type="Int16" Nullable="false" />
+    <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Report_AlertStatus_Type">
+    <Key>
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="tAreaEvent" Type="Int32" />
+    <Property Name="tAbsent" Type="Int32" />
+    <Property Name="tBatteryInsufficient" Type="Int32" />
+    <Property Name="tBatteryReset" Type="Int32" />
+    <Property Name="tButtonPressed" Type="Int32" />
+    <Property Name="tWristletBroken" Type="Int32" />
+    <Property Name="tAPLocatorDown" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Report_AlertType_Status">
+    <Key>
+      <PropertyRef Name="tType" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tType" Type="Int32" Nullable="false" />
+    <Property Name="sNew" Type="Int32" />
+    <Property Name="sProcessing" Type="Int32" />
+    <Property Name="sResolved" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Report_TotalCount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sNew" Type="Int32" />
+    <Property Name="sProcessing" Type="Int32" />
+    <Property Name="sResolved" Type="Int32" />
+    <Property Name="sTotal" Type="Int32" />
+    <Property Name="tAreaEvent" Type="Int32" />
+    <Property Name="tAbsent" Type="Int32" />
+    <Property Name="tBatteryInsufficient" Type="Int32" />
+    <Property Name="tBatteryReset" Type="Int32" />
+    <Property Name="tButtonPressed" Type="Int32" />
+    <Property Name="tWristletBroken" Type="Int32" />
+    <Property Name="tAPLocatorDown" Type="Int32" />
+    <Property Name="tTotal" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sys_BackupLogConfig">
+    <Key>
+      <PropertyRef Name="FieldType" />
+      <PropertyRef Name="FieldValue" />
+    </Key>
+    <Property Name="FieldType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FieldValue" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="DateFieldName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sys_Calibration">
+    <Key>
+      <PropertyRef Name="GoupId" />
+    </Key>
+    <Property Name="GoupId" Type="Int32" Nullable="false" />
+    <Property Name="Rssi" Type="Int32" />
+    <Property Name="GoodTagSignal" Type="Int32" />
+    <Property Name="TagOutRangeRssi" Type="Int32" />
+    <Property Name="TagAbsendIntervalInLocating" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sys_DefaultDisabledAccess">
+    <Key>
+      <PropertyRef Name="Role" />
+    </Key>
+    <Property Name="pcID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="Role" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="plugin_PageConfig" Relationship="GMSLocModel.FK_ddacc_R_pc" FromRole="sys_DefaultDisabledAccess" ToRole="plugin_PageConfig" />
+  </EntityType>
+  <EntityType Name="sys_Diary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="HostId" Type="Int32" Nullable="false" />
+    <Property Name="Action" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="sys_DisabledAccess">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+    <Property Name="pcID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="plugin_PageConfig" Relationship="GMSLocModel.FK_disacc_R_pageconfig" FromRole="sys_DisabledAccess" ToRole="plugin_PageConfig" />
+    <NavigationProperty Name="sys_User" Relationship="GMSLocModel.FK_disacc_R_sysuser" FromRole="sys_DisabledAccess" ToRole="sys_User" />
+  </EntityType>
+  <EntityType Name="sys_SystemConfig">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="GroupId" Type="Byte" Nullable="false" />
+    <Property Name="UIName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="InputMode" Type="Byte" Nullable="false" />
+    <Property Name="Pattern" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Range" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sys_Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Command" Type="Byte" Nullable="false" />
+    <Property Name="CommandXml" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Period" Type="Byte" Nullable="false" />
+    <Property Name="ExecuteTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Memo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="WriteTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="sys_User">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+    <Property Name="Role" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="sys_DisabledAccess" Relationship="GMSLocModel.FK_disacc_R_sysuser" FromRole="sys_User" ToRole="sys_DisabledAccess" />
+  </EntityType>
+  <Association Name="FK_gi">
+    <End Role="map_MapAreaGroupInfo" Type="GMSLocModel.map_MapAreaGroupInfo" Multiplicity="1" />
+    <End Role="map_MapAreaGroup" Type="GMSLocModel.map_MapAreaGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="map_MapAreaGroupInfo">
+        <PropertyRef Name="GroupID" />
+      </Principal>
+      <Dependent Role="map_MapAreaGroup">
+        <PropertyRef Name="AreaGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_pcID">
+    <End Role="plugin_PageConfig" Type="GMSLocModel.plugin_PageConfig" Multiplicity="0..1" />
+    <End Role="plugin_Menu" Type="GMSLocModel.plugin_Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plugin_PageConfig">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="plugin_Menu">
+        <PropertyRef Name="pcID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ddacc_R_pc">
+    <End Role="plugin_PageConfig" Type="GMSLocModel.plugin_PageConfig" Multiplicity="0..1" />
+    <End Role="sys_DefaultDisabledAccess" Type="GMSLocModel.sys_DefaultDisabledAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plugin_PageConfig">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="sys_DefaultDisabledAccess">
+        <PropertyRef Name="pcID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_disacc_R_pageconfig">
+    <End Role="plugin_PageConfig" Type="GMSLocModel.plugin_PageConfig" Multiplicity="0..1" />
+    <End Role="sys_DisabledAccess" Type="GMSLocModel.sys_DisabledAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plugin_PageConfig">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="sys_DisabledAccess">
+        <PropertyRef Name="pcID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_disacc_R_sysuser">
+    <End Role="sys_User" Type="GMSLocModel.sys_User" Multiplicity="1" />
+    <End Role="sys_DisabledAccess" Type="GMSLocModel.sys_DisabledAccess" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="sys_User">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="sys_DisabledAccess">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
